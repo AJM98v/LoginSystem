@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Yekan;
+    src: url("../Fonts/yekan-regular.ttf") format("truetype");
+    src: url("../Fonts/yekan-regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: Yazir;
+    src: url("../Fonts/Vazir-Medium-FD.ttf") format("truetype");
+    src: url("../Fonts/Vazir-Medium-FD.woff") format("woff");
+}
+
+@font-face {
+    font-family: Sora;
+    src: url("../Fonts/Sora-Medium.ttf") format("truetype");
+}
+
+body {
+    direction: rtl;
+    font-family: Yekan, sans-serif;
+
+
+}
+
+.bg {
+    background-image: url("../Image/pexels-tranmautritam-948050.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container {
+    background-image: linear-gradient(90deg, #d63031, #00cec9);
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 20px 8px rgba(210, 210, 210, .5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 60%;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.container h1 {
+    font-family: Yazir, sans-serif;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, -20px);
+    font-size: 19px;
+    font-weight: bolder;
+}
+
+.container a button {
+    background-color: #2d3436;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: wheat;
+    width: 40%;
+    cursor: pointer;
+    font-family: Yazir,sans-serif;
+}
+
+.container .signup-form {
+    display: grid;
+    background-color: inherit;
+    border-radius: 15px;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    padding: 40px;
+
+}
+
+.signup-form label {
+    color: white;
+    font-size: 18px;
+
+}
+
+.signup-form input {
+    color: white;
+    background-color: #2d3436;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+.signup-form input::placeholder {
+    text-align: center;
+    font-size: 13px;
+    font-family: Sora, Yekan, sans-serif;
+}
+
+.signup-form button {
+    grid-column: 2/3;
+    border: 1px solid white;
+    outline: none;
+    background-image: linear-gradient(to right, #d63031, #0984e3);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-family: Yekan, sans-serif;
+    padding: 7px;
+    transition: all .4s;
+}
+
+.signup-form button:hover {
+    background-image: linear-gradient(to right, #00b894, #55efc4);
+    color: black;
+}
+
+.container .Error {
+    font-family: Yazir, sans-serif;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, -20px);
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+.login-form {
+    display: grid;
+    background-color: inherit;
+    border-radius: 15px;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    height: 50%;
+    padding: 40px;
+    z-index: 5;
+
+}
+
+.login-form label {
+    color: white;
+    font-size: 18px;
+
+}
+
+.login-form input {
+    color: white;
+    background-color: #2d3436;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+.login-form input::placeholder {
+    text-align: center;
+    font-size: 13px;
+    font-family: Sora, Yekan, sans-serif;
+}
+
+.login-form button {
+    grid-column: 2/3;
+    border: 1px solid white;
+    outline: none;
+    background-image: linear-gradient(to right, #d63031, #0984e3);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-family: Yekan, sans-serif;
+    padding: 7px;
+    transition: all .4s;
+}
+
+.login-form button:hover {
+    background-image: linear-gradient(to right, #00b894, #55efc4);
+    color: black;
+}
+
